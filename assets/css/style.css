@@ -1,0 +1,52 @@
+/* 整體頁面風格 */
+body {
+    background-color: #0d1a34;
+    color: #ffffff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #1e2a4a;
+    padding: 20px;
+    border: 1px solid #5a8fb8;
+}
+
+/* 連結樣式 */
+a {
+    color: #87cefa;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* 頁首導覽列 */
+header h1 a {
+    color: white;
+}
+header nav a {
+    margin-left: 15px;
+}
+
+/* --- FGO 角色資料頁專用樣式 --- */
+.servant-profile-container {
+    display: flex;
+    flex-wrap: wrap; /* 在小螢幕上可以換行 */
+    gap: 20px;
+    background-color: #0d1a34;
+    padding: 15px;
+    border: 2px solid #5a8fb8;
+}
+.servant-image {
+    flex: 1 1 300px; /* 基礎寬度 300px */
+}
+.servant-image img {
+    max-width: 100%;
+    height: auto;
+}
+.servant-data {
+    flex: 2 1 500px; /* 基礎寬度 500px */
+}
